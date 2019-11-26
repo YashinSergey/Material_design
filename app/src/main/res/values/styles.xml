@@ -27,9 +27,9 @@
     </style>
 
     <style name="AppTheme5" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary" tools:ignore="ResourceCycle">@color/orange</item>
-        <item name="colorPrimaryDark" tools:ignore="ResourceCycle">@color/cinnabar</item>
-        <item name="colorAccent" tools:ignore="ResourceCycle">@color/free_speech_magenta</item>
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">@color/cinnabar</item>
+        <item name="colorAccent">@color/free_speech_magenta</item>
     </style>
 z
     <style name="textViewStyle">
