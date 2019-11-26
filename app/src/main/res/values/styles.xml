@@ -1,13 +1,37 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/dark_cyan</item>
+        <item name="colorPrimaryDark">@color/pine_green</item>
+        <item name="colorAccent">@color/aquamarine</item>
+    </style>
+
+    <style name="AppTheme3" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/fire_engine_red</item>
+        <item name="colorAccent">@color/wild_watermelon</item>
+    </style>
+
+    <style name="AppTheme4" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/dark_orchid</item>
+        <item name="colorPrimaryDark">@color/vivid_violet</item>
+        <item name="colorAccent">@color/medium_slate_blue</item>
+    </style>
+
+    <style name="AppTheme5" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary" tools:ignore="ResourceCycle">@color/orange</item>
+        <item name="colorPrimaryDark" tools:ignore="ResourceCycle">@color/cinnabar</item>
+        <item name="colorAccent" tools:ignore="ResourceCycle">@color/free_speech_magenta</item>
+    </style>
+z
     <style name="textViewStyle">
         <item name="android:background">@color/brown</item>
         <item name="android:textColor">@color/white</item>
