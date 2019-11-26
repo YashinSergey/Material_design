@@ -6,6 +6,7 @@
 
     <color name="brown">#6D4C41</color>
     <color name="white">#FFFF</color>
+    <color name="black">#111111</color>
 
     <color name="dark_cyan">#009688</color>
     <color name="pine_green">#00796b</color>
@@ -22,4 +23,8 @@
     <color name="orange">#ff5722</color>
     <color name="cinnabar">#e64a19</color>
     <color name="free_speech_magenta">#e040fb</color>
+
+    <color name="coral">#5677fc</color>
+    <color name="navy_blue">#455ede</color>
+    <color name="islamic_green">#5af158</color>
 </resources>
