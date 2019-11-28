@@ -8,14 +8,18 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/hint_text"
         app:counterEnabled="true"
         app:counterMaxLength="10"
-        app:counterOverflowTextAppearance="@style/TextInputLayoutStyle">
+        app:counterOverflowTextAppearance="@style/TextInputLayoutStyle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:errorEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
