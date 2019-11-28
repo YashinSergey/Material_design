@@ -12,12 +12,12 @@
         android:layout_height="wrap_content"
         android:hint="@string/hint_text"
         app:counterEnabled="true"
-        app:counterMaxLength="10">
+        app:counterMaxLength="10"
+        app:counterOverflowTextAppearance="@style/TextInputLayoutStyle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/EditTextStyle" />
+            android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

@@ -33,7 +33,8 @@
         <item name="colorAccent">@color/red</item>
     </style>
 
-    <style name="EditTextStyle" parent="Base.Theme.MaterialComponents">
+    <style name="TextInputLayoutStyle" parent="Base.Theme.MaterialComponents">
+        <item name="android:textColor">@color/vivid_violet</item>
         <item name="colorControlNormal">@color/red</item>
         <item name="colorControlActivated">@color/brown</item>
     </style>
