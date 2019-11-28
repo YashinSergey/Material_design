@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int MAX_TEXT_LENGTH = 10;
     private static final String EMPTY_LINE = "";
     private static final String ERROR_MESSAGE = "10 characters max";
-    
+
     private TextInputLayout tInputLayout;
     private TextInputEditText tEditText;
 

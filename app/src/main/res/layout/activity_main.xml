@@ -16,7 +16,8 @@
         app:counterMaxLength="10"
         app:counterOverflowTextAppearance="@style/TextInputLayoutStyle"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        app:errorEnabled="true">
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/ErrorText">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/textInputEditText"
