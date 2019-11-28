@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
     private static final int MAX_TEXT_LENGTH = 10;
     private static final String EMPTY_LINE = "";
-    private int counter;
-
+    private static final String ERROR_MESSAGE = "10 characters max";
+    
     private TextInputLayout tInputLayout;
     private TextInputEditText tEditText;
 
@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
                 hideError();
             }
         }
-
         @Override
         public void afterTextChanged(Editable s) {}
     };
@@ -58,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void showError() {
         if (Objects.requireNonNull(tEditText.getText()).length() > MAX_TEXT_LENGTH) {
-            tInputLayout.setError("10 characters max");
+            tInputLayout.setError(ERROR_MESSAGE);
         }
     }
 }
