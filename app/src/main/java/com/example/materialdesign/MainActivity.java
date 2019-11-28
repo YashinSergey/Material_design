@@ -6,6 +6,7 @@ import android.text.TextWatcher;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -58,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
     private void showError() {
         if (Objects.requireNonNull(tEditText.getText()).length() > MAX_TEXT_LENGTH) {
             tInputLayout.setError(ERROR_MESSAGE);
+            Snackbar.make(findViewById(android.R.id.content), ERROR_MESSAGE, Snackbar.LENGTH_SHORT).show();
         }
     }
 }
