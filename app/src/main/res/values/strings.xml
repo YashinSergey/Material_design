@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Material design</string>
     <string name="hint_text">text</string>
+    <string name="btn_snackbar_call">Snackbar call</string>
 </resources>
