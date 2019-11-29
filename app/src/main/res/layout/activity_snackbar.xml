@@ -8,6 +8,6 @@
         android:id="@+id/snackbar_call_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Snackbar call"/>
+        android:text="@string/btn_snackbar_call"/>
 
 </LinearLayout>
