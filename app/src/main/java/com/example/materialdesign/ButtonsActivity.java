@@ -31,7 +31,7 @@ public class ButtonsActivity extends AppCompatActivity {
     View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Toast.makeText(ButtonsActivity.this, "Fab test", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ButtonsActivity.this, "Btn test", Toast.LENGTH_SHORT).show();
         }
     };
 }
