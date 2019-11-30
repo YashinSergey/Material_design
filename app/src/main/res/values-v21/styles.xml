@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
@@ -26,16 +27,12 @@
         <item name="colorAccent">@color/medium_slate_blue</item>
     </style>
 
-    <style name="AppTheme5" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/orange</item>
-        <item name="colorPrimaryDark">@color/cinnabar</item>
-        <item name="colorAccent">@color/free_speech_magenta</item>
-    </style>
-z
     <style name="textViewStyle">
         <item name="android:background">@color/brown</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:gravity">center</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:outlineProvider">bounds</item>
+        <item name="android:clipToPadding">false</item>
     </style>
-
 </resources>
