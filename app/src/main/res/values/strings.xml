@@ -5,4 +5,6 @@
     <string name="on_state_changed_counter">onStateChanged counter:</string>
     <string name="on_slide_counter">onSlide counter:</string>
     <string name="_0">0</string>
+    <string name="flat_button">flat button</string>
+    <string name="raised_button">raised button</string>
 </resources>
