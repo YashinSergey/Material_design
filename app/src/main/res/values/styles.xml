@@ -33,6 +33,12 @@
         <item name="colorAccent">@color/red</item>
     </style>
 
+    <style name="AppTheme5.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/coral</item>
+        <item name="colorPrimaryDark">@color/navy_blue</item>
+        <item name="colorAccent">@color/red</item>
+    </style>
+
     <style name="TextInputLayoutStyle" parent="Base.Theme.MaterialComponents">
         <item name="android:textColor">@color/vivid_violet</item>
         <item name="colorControlNormal">@color/red</item>
