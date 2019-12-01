@@ -3,12 +3,12 @@ package com.example.materialdesign;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 
 public class ButtonsActivity extends AppCompatActivity {
 
@@ -31,7 +31,7 @@ public class ButtonsActivity extends AppCompatActivity {
     View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Toast.makeText(ButtonsActivity.this, "Btn test", Toast.LENGTH_SHORT).show();
+            Snackbar.make(v,"Btn test", Snackbar.LENGTH_SHORT).show();
         }
     };
 }
