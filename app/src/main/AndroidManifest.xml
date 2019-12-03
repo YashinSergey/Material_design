@@ -18,6 +18,13 @@
 
         </activity>
         <activity android:name=".BottomSheetActivity">
+
+        </activity>
+        <activity android:name=".ButtonsActivity" >
+
+        </activity>
+        <activity android:name=".ToolbarActivity"
+            android:theme="@style/AppTheme5.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
