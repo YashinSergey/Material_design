@@ -7,4 +7,9 @@
     <string name="_0">0</string>
     <string name="flat_button">flat button</string>
     <string name="raised_button">raised button</string>
+    <string name="elisabeth_barker">Elisabeth Barker</string>
+    <string name="photo">photo</string>
+    <string name="elisabeth_email">ElisabethBarker@gmail.com</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>
