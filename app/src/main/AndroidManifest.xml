@@ -9,9 +9,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme3"
+        android:theme="@style/AppTheme5"
         tools:ignore="AllowBackup">
         <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".SnackbarActivity" >
+
+        </activity>
+        <activity android:name=".BottomSheetActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />

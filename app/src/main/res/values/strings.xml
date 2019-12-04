@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Material design</string>
+    <string name="hint_text">text</string>
+    <string name="btn_snackbar_call">Snackbar call</string>
+    <string name="on_state_changed_counter">onStateChanged counter:</string>
+    <string name="on_slide_counter">onSlide counter:</string>
+    <string name="_0">0</string>
 </resources>
