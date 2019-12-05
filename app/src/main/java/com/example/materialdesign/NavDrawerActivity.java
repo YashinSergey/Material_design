@@ -33,28 +33,29 @@ public class NavDrawerActivity extends AppCompatActivity implements NavigationVi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nav_drawer);
 
-        initViews();
-        setSupportActionBar(toolbar);
-        toggleSetting();
-
-        navigationView.setNavigationItemSelectedListener(this);
-
-        fab.setOnClickListener(fabListener);
-
+        initToolbar();
+        initNavigationDrawer();
+        fabInit();
     }
 
-    private void toggleSetting() {
+    private void initNavigationDrawer() {
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.navigationView);
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        navigationView.setNavigationItemSelectedListener(this);
     }
 
-    private void initViews() {
-        toolbar = findViewById(R.id.toolbar);
+    private void fabInit() {
         fab = findViewById(R.id.fab);
-        drawerLayout = findViewById(R.id.drawer_layout);
-        navigationView = findViewById(R.id.navigationView);
+        fab.setOnClickListener(fabListener);
+    }
+
+    private void initToolbar() {
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
     }
 
     @Override
