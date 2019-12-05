@@ -6,11 +6,13 @@
     android:layout_height="match_parent"
     android:background="@drawable/wallpaper">
 
-    <androidx.core.widget.ContentLoadingProgressBar
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+    <ProgressBar
+        android:id="@+id/progress_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyle"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:visibility="visible" />
+        android:visibility="invisible"/>
 
 </RelativeLayout>
