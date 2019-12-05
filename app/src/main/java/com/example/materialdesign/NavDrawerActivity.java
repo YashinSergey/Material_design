@@ -1,8 +1,10 @@
 package com.example.materialdesign;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -26,6 +28,7 @@ public class NavDrawerActivity extends AppCompatActivity implements NavigationVi
     private NavigationView navigationView;
     private Toolbar toolbar;
     private FloatingActionButton fab;
+    private ProgressBar progressBar;
 
 
     @Override
@@ -33,9 +36,18 @@ public class NavDrawerActivity extends AppCompatActivity implements NavigationVi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nav_drawer);
 
+        initProgressBar();
+
         initToolbar();
         initNavigationDrawer();
         fabInit();
+    }
+
+    private void initProgressBar() {
+        progressBar = findViewById(R.id.progress_circle);
+        Drawable progressDrawable = progressBar.getIndeterminateDrawable().mutate();
+        progressDrawable.setColorFilter(getResources().getColor(R.color.white), android.graphics.PorterDuff.Mode.SRC_IN);
+        progressBar.setProgressDrawable(progressDrawable);
     }
 
     private void initNavigationDrawer() {
@@ -85,6 +97,12 @@ public class NavDrawerActivity extends AppCompatActivity implements NavigationVi
                 break;
             case R.id.logout:
                 finish();
+                break;
+            case R.id.progressBarOn:
+                progressBar.setVisibility(View.VISIBLE);
+                break;
+            case R.id.progressBarOff:
+                progressBar.setVisibility(View.INVISIBLE);
                 break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
