@@ -29,11 +29,11 @@
     <item android:title="@string/menu_title_progressbar">
         <menu>
             <item
-                android:id="@+id/progressBarOn"
-                android:title="@string/progress_bar_on" />
+                android:id="@+id/progressBarShow"
+                android:title="@string/progress_bar_show" />
             <item
-                android:id="@+id/progressBarOff"
-                android:title="@string/progress_bar_off" />
+                android:id="@+id/progressBarHide"
+                android:title="@string/progress_bar_hide" />
         </menu>
     </item>
 

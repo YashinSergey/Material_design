@@ -98,10 +98,10 @@ public class NavDrawerActivity extends AppCompatActivity implements NavigationVi
             case R.id.logout:
                 finish();
                 break;
-            case R.id.progressBarOn:
+            case R.id.progressBarShow:
                 progressBar.setVisibility(View.VISIBLE);
                 break;
-            case R.id.progressBarOff:
+            case R.id.progressBarHide:
                 progressBar.setVisibility(View.INVISIBLE);
                 break;
         }

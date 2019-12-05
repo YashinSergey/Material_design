@@ -19,6 +19,6 @@
     <string name="activities">Activities</string>
     <string name="logout">Logout</string>
     <string name="menu_title_progressbar">ProgressBar</string>
-    <string name="progress_bar_on">On</string>
-    <string name="progress_bar_off">Off</string>
+    <string name="progress_bar_show">Show</string>
+    <string name="progress_bar_hide">Hide</string>
 </resources>
