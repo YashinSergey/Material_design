@@ -3,27 +3,27 @@
 
     <item
         android:id="@+id/dashboard"
-        android:title="Dashboard"
+        android:title="@string/dashboard"
         android:icon="@drawable/ic_dashboard_black_24dp"/>
     <item
         android:id="@+id/event"
-        android:title="Events"
+        android:title="@string/events"
         android:icon="@drawable/ic_event_black_24dp"/>
     <item
         android:id="@+id/search"
-        android:title="Search"
+        android:title="@string/search"
         android:icon="@drawable/ic_search_black_24dp"/>
     <item
         android:id="@+id/settings"
-        android:title="Settings"
+        android:title="@string/settings"
         android:icon="@drawable/ic_settings_black_24dp"/>
     <item
         android:id="@+id/activities"
-        android:title="Activities"
+        android:title="@string/activities"
         android:icon="@drawable/ic_trending_up_black_24dp"/>
     <item
         android:id="@+id/logout"
-        android:title="Logout"
+        android:title="@string/logout"
         android:icon="@drawable/ic_exit_to_app_black_24dp"/>
 
 </menu>
