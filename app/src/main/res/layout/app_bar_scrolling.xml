@@ -12,10 +12,6 @@
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme1.AppBarOverlay">
 
-        <com.google.android.material.appbar.CollapsingToolbarLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp" />
-
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar_scrolling_activity"
             android:layout_width="match_parent"
