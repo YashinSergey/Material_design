@@ -38,6 +38,7 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
         android:scrollbarAlwaysDrawHorizontalTrack="true"
-        app:srcCompat="@android:drawable/ic_dialog_email"/>
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        app:layout_behavior="com.example.materialdesign.MyFabBehavior"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
