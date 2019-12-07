@@ -16,7 +16,7 @@
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="@drawable/header_dl"
+            android:background="@drawable/declaration_of_independence"
             app:layout_scrollFlags="scroll|snap"
             app:contentScrim="@color/colorPrimary">
 
