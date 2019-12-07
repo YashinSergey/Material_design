@@ -27,11 +27,11 @@ public class MyFabBehavior extends FloatingActionButton.Behavior {
                 dxUnconsumed, dyUnconsumed, type);
         if (dyConsumed > 0) {
             CoordinatorLayout.LayoutParams layoutParams = (CoordinatorLayout.LayoutParams) child.getLayoutParams();
-            int fabBottomMargin = layoutParams.bottomMargin;
-            child.animate().translationY(child.getHeight() + fabBottomMargin)
+            int fabRightMargin = layoutParams.rightMargin;
+            child.animate().translationX(child.getWidth() + fabRightMargin)
                     .setInterpolator(new LinearInterpolator()).start();
         } else if (dyConsumed < 0) {
-            child.animate().translationY(0).setInterpolator(new LinearInterpolator()).start();
+            child.animate().translationX(0).setInterpolator(new LinearInterpolator()).start();
         }
     }
 
