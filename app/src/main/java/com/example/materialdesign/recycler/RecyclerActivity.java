@@ -35,7 +35,7 @@ public class RecyclerActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
     }
 
-    private void fillTheList(ArrayList<String> list) {
+    private void fillTheList(List<String> list) {
         list.add("Mountain lake");
         list.add("Hills");
         list.add("New York city");
