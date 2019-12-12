@@ -18,6 +18,18 @@
 
         </activity>
         <activity android:name=".BottomSheetActivity">
+
+        </activity>
+        <activity android:name=".ButtonsActivity" >
+
+        </activity>
+        <activity android:name=".ToolbarActivity"
+            android:theme="@style/AppTheme5.NoActionBar">
+
+        </activity>
+        <activity android:name=".NavDrawerActivity"
+            android:theme="@style/AppTheme1.NoActionBar"
+            android:label="DrawerLayout">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />

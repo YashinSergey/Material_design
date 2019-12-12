@@ -9,6 +9,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme1.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme1.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme1.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
     <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/dark_cyan</item>
         <item name="colorPrimaryDark">@color/pine_green</item>
@@ -28,6 +35,12 @@
     </style>
 
     <style name="AppTheme5" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/coral</item>
+        <item name="colorPrimaryDark">@color/navy_blue</item>
+        <item name="colorAccent">@color/red</item>
+    </style>
+
+    <style name="AppTheme5.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/coral</item>
         <item name="colorPrimaryDark">@color/navy_blue</item>
         <item name="colorAccent">@color/red</item>
