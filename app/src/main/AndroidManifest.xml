@@ -30,6 +30,9 @@
         <activity android:name=".NavDrawerActivity"
             android:theme="@style/AppTheme1.NoActionBar"
             android:label="DrawerLayout">
+
+        </activity>
+        <activity android:name=".recycler.RecyclerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
