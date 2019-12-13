@@ -2,13 +2,12 @@ package com.example.materialdesign.recycler;
 
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
+
 import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.materialdesign.R;
@@ -18,14 +17,14 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>{
 
-    private ArrayList<String> mImageNames;
-    private ArrayList<String> mImages;
-    private Context mContext;
+    private ArrayList<String> imageNames;
+    private ArrayList<String> images;
+    private Context context;
 
     public RecyclerViewAdapter(Context context, ArrayList<String> imageNames, ArrayList<String> images ) {
-        mImageNames = imageNames;
-        mImages = images;
-        mContext = context;
+        this.imageNames = imageNames;
+        this.images = images;
+        this.context = context;
     }
 
     @Override
@@ -37,23 +36,23 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
-        Glide.with(mContext).asBitmap().load(mImages.get(position)).into(holder.image);
+        Glide.with(context).asBitmap().load(images.get(position)).into(holder.image);
 
-        holder.imageName.setText(mImageNames.get(position));
+        holder.imageName.setText(imageNames.get(position));
         holder.parentLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(mContext, GalleryActivity.class);
-                intent.putExtra("image_url", mImages.get(position));
-                intent.putExtra("image_name", mImageNames.get(position));
-                mContext.startActivity(intent);
+                Intent intent = new Intent(context, GalleryActivity.class);
+                intent.putExtra("image_url", images.get(position));
+                intent.putExtra("image_name", imageNames.get(position));
+                context.startActivity(intent);
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        return mImageNames.size();
+        return imageNames.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
