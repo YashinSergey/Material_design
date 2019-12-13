@@ -2,35 +2,35 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="4dp"
     android:clipToPadding="false"
     app:cardCornerRadius="6dp"
     app:cardElevation="8dp">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <RelativeLayout
+        android:id="@+id/parent_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="8dp">
+        android:layout_height="wrap_content"
+        android:padding="15dp">
 
-
-        <ImageView
-            android:id="@+id/image_view_recycler"
-            android:layout_gravity="center"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@drawable/mountain_lake" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"/>
 
         <TextView
-            android:id="@+id/text_view_recycler"
-            android:layout_gravity="center"
+            android:id="@+id/image_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18dp"
-            tools:text="description" />
+            android:text="@string/colored_rocks_china"
+            android:layout_toEndOf="@+id/image"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:textSize="17sp"/>
 
-    </LinearLayout>
+    </RelativeLayout>
 </androidx.cardview.widget.CardView>
