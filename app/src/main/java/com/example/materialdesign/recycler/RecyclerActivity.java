@@ -1,10 +1,11 @@
 package com.example.materialdesign.recycler;
 
 import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.materialdesign.R;
 
 import java.util.ArrayList;
@@ -32,7 +33,7 @@ public class RecyclerActivity extends AppCompatActivity {
         imageUrls.add("https://i.pinimg.com/originals/dc/23/9d/dc239d99d70a1e27f07bb78cac33416d.jpg");
         names.add("Li River, China");
 
-        imageUrls.add("https://i.redd.it/j6myfqglup501.jpg");
+        imageUrls.add("https://i.pinimg.com/originals/5b/c9/5b/5bc95b97331019bb4b7be7f2e9223826.jpg");
         names.add("The Meteora Monasteries, Greece");
 
 
