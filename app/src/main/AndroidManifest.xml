@@ -30,6 +30,10 @@
         <activity android:name=".NavDrawerActivity"
             android:theme="@style/AppTheme1.NoActionBar"
             android:label="DrawerLayout">
+        </activity>
+        <activity android:name=".ScrollingActivity"
+            android:theme="@style/AppTheme1.NoActionBar"
+            android:label="ScrollingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
